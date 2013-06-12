@@ -1,0 +1,22 @@
+<?php
+/**
+ * @file
+ * Code for the homepage_banner feature.
+ */
+
+include_once 'homepage_banner.features.inc';
+function homepage_banner_init() {
+    $path = drupal_get_path_alias($_GET['q']);
+    $parts = explode('/', $path);
+    $count =count($parts);
+    if ($parts[0] == "people" && $count  == 2) {
+        drupal_add_js('jQuery(document).ready(function () { var sep = "»";var text = jQuery(".breadcrumb").contents().filter(function() {       return this.nodeType == Node.TEXT_NODE;    }).text().split(sep);if(text[1].trim() == "people"){    var cur_term = text[2];    var breadcrumb = \'<a href="/">Home</a> \'+sep+\' <a href="/people/pi">people</a> \'+sep+\' <a class="activ activ-trail">\'+cur_term.trim()+\'</a>\';}jQuery(".breadcrumb").html(breadcrumb);});', array('type' => 'inline', 'scope' => 'footer', 'weight' => 5));
+    };
+    if ($parts[0] == "bibliography" && $count  == 2) {
+        drupal_add_js('jQuery(document).ready(function () { var sep = "»";var text = jQuery(".breadcrumb").contents().filter(function() {       return this.nodeType == Node.TEXT_NODE;    }).text().split(sep);if(text[1].trim() == "bibliography"){    var cur_term = text[2];    var breadcrumb = \'<a href="/">Home</a> \'+sep+\' <a href="/bibliography/general-bibliography">bibliography</a> \'+sep+\' <a class="activ activ-trail">\'+cur_term.trim()+\'</a>\';}jQuery(".breadcrumb").html(breadcrumb);});', array('type' => 'inline', 'scope' => 'footer', 'weight' => 5));
+    };
+}
+
+function homepage_banner_node_update($node){
+    variable_set("last_modified", date('d/m/Y'));
+}

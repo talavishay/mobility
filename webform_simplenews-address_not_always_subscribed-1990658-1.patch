@@ -1,0 +1,31 @@
+diff --git a/webform_simplenews.inc b/webform_simplenews.inc
+index 856db54..fa732d3 100644
+--- a/webform_simplenews.inc
++++ b/webform_simplenews.inc
+@@ -187,16 +187,17 @@ function _webform_submit_newsletter_email($component, $value) {
+         $selected_subscriptions[(int) $k] = (int) $k;
+       }
+     }
++    
++    if (count($selected_subscriptions) > 0) {
++      $news_vid = $selected_subscriptions;
++    }
++    else {
++      $news_vid = array();
++    }
++  } else {
++    $news_vid = $component['extra']['news_vid'];
+   }
+-  $news_vid = $component['extra']['news_vid'];
+-
+-  if (count($selected_subscriptions) > 0) {
+-    $news_vid = $selected_subscriptions;
+-  }
+-  else {
+-    $news_vid = array();
+-  }
+-
++  
+   $action = $component['extra']['action'];
+   $account = simplenews_load_user_by_mail($mail);
+   // If email belongs to the current registered user, don't send confirmation.
