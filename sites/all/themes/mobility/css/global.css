@@ -404,7 +404,7 @@ cursor: pointer;
 /*
 breadcrumb
 */
-#breadcrumb a {
+#breadcrumb * {
   color: #394551;
   font-size: 11px;
   text-decoration: none;
