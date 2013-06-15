@@ -39,3 +39,8 @@ function mobility_process_views_view(&$vars){
         }
     }
 }
+function mobility_breadcrumb($breadcrumb) {
+   if (!empty($breadcrumb)) {
+     return '<div class="breadcrumb">'. implode(' <span class="breadcrumb_sep">></span> ', $breadcrumb["breadcrumb"]) .'</div>';
+   }
+}
