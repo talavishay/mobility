@@ -737,9 +737,11 @@ font-size: 12px;
 }
 /*#block-block-2 ,*/ 
 #region-menu--2 {
-    margin: 0 ;
-    width: 100%;
     border-bottom: 1px dotted white;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    z-index: 9;
 }
 #region-menu--2 nav {
     
