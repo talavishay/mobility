@@ -307,7 +307,7 @@ text-align: center;
 .front #zone-menu #main-menu li{
   padding: 0 3px;
 }
-
+.node-type-project a#project,
 .node-type-news a#news ,
 .node-type-links a#links,
 .node-type-publications a#publications,
