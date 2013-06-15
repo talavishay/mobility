@@ -409,6 +409,7 @@ breadcrumb
   font-size: 11px;
   text-decoration: none;
 }
+#breadcrumb .last,
 #breadcrumb a:last-child {
   color: #FC650A;
 }
