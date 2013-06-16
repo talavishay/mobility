@@ -42,7 +42,9 @@ function mobility_process_views_view(&$vars){
 function mobility_breadcrumb($breadcrumb) {
    if (!empty($breadcrumb)) {
        $length = count($breadcrumb["breadcrumb"]);
-       $breadcrumb["breadcrumb"][$length-1] = '<span class="last">'.$breadcrumb["breadcrumb"][$length-1].'</span>';
+       if(isset($breadcrumb["breadcrumb"][$length-1])){
+        $breadcrumb["breadcrumb"][$length-1] = '<span class="last">'.$breadcrumb["breadcrumb"][$length-1].'</span>';
+       }
      return '<div class="breadcrumb">'. implode(' <span class="breadcrumb_sep">></span> ', $breadcrumb["breadcrumb"]) .'</div>';
    }
 }
