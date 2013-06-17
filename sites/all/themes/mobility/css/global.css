@@ -792,7 +792,7 @@ database
  /*
 contact us
 */
-.page-node-10 a {
+.page-node-10 .node a {
   font-size: 18px;
 }
 /*
@@ -906,7 +906,7 @@ font-weight: bold;
     padding-top: 34px;
 }
 section#block-views-people-block-1 .block-inner {
-    border-right: 1px dotted;
+    border-right: 1px dotted #636f7a;
     padding-right: 2px;
     width: 130px;
 }
