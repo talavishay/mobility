@@ -760,10 +760,10 @@ font-size: 12px;
 padding: 0 8px;
 }
 #region-menu--2 a:hover {
-  color: #dd4003;
+  color: #fa9a1d;
 }
 #region-menu--2 a.active-trail {
-   color: #dd4003;
+   color: #fa9a1d;
 }
 
 #region-menu--2 li {
