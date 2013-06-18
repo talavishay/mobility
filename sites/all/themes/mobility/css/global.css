@@ -783,7 +783,8 @@ padding-right:0px;
 database
 */
 .page-node-1 #region-content > div ,
-.page-node-3 #region-content > div {
+.page-node-3 #region-content > div,
+.page-node-5 #region-content > div {
   display: block;
   margin: 0 auto;
   width: 640px !important;
@@ -846,6 +847,7 @@ font-weight: bold;
 }
 .field-name-field-image-basic .field-item {
     margin-bottom: 30px;
+    border: 1px solid;
 }
 
 .node-type-publication .field-name-body {
