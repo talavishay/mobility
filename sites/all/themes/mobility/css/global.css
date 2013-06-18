@@ -436,7 +436,7 @@ projects
 .page-projects  .links.node-links ul li a:active,
 .page-projects  .links.node-links ul li a:hover  {
   color: red;
-  /*background-position:right -4px ;*/
+  background-position:right -4px ;
 }
 
 #block-multiblock-1 li{
