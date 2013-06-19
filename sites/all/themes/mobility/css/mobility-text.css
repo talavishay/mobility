@@ -164,3 +164,6 @@ dd {
     padding-right: 2px;
     width: 118px;
 }
+.node-type-links#ckeditor-custom-id li {
+    margin-bottom: 10px;
+}

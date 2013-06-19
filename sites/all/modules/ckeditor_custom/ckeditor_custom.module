@@ -14,14 +14,17 @@ function ckeditor_custom_wysiwyg_editor_settings_alter(&$settings, $context) {
   // The $context variable contains information about the wysiwyg profile we're using
   // In this case we just need to check that the editor being used is ckeditor
   if ($context['profile']->editor == 'ckeditor') {
-
+      $arg = arg();
+      if($arg[0]=== "node"  ){
+          $node = node_load($arg[1]);
+      }
     // Specify the custom config file that defines our font styles
     $settings['customConfig'] = base_path() . drupal_get_path('module', 'ckeditor_custom') .
                                 '/ckeditor_custom_config.js';
 
     // We are also going to specify a custom body id and class
-//    $settings['bodyId'] = 'ckeditor_custom_id';
-//    $settings['bodyClass'] = 'ckeditor_custom_class';
+    $settings['bodyId'] = 'ckeditor-custom-id';
+    $settings['bodyClass'] = "node-type-".$node->type;
 
     // Make sure the toolbar is there
     if (!empty($settings['toolbar'])) {

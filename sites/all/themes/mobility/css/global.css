@@ -1018,7 +1018,8 @@ text-decoration: underline;
 }
 
 .node-people .field-name-field-email .field-item{
-    color: #ff4e00;
+color: #FF4E00;
+display: block;
     
 }
 /*  publications */
@@ -1073,40 +1074,10 @@ section#block-menu-menu-publication   .block-inner {
 .node-type-links #page-title {
     font-size: 0;
 }
-/*#block-menu-menu-links li{
-    list-style:none;
-    list-style-image: none;
-    margin-left: 0px;
-    margin-right: 2px;
-    padding:10px 0;
-    border-bottom: 1px dotted;
+.node-type-links .field-name-body li ,
+#ckeditor_custom_id.node-type-links li {
+    margin-bottom: 10px;
 }
-#block-menu-menu-links li a{
-    background-image: url("/sites/all/themes/mobility/images/bullets.png");
-    background-repeat: no-repeat;
-    display: block;
-    font-weight: normal;
-    letter-spacing: 0;
-    padding-left: 13px !important;
-     line-height: 13px;
-    
-    background-position: 0 5px;
-}
-#block-menu-menu-links  a.active, 
-#block-menu-menu-links  a:hover{
-    background-position: 0 -41px !important;
-    border-color: inherit;
-    color: #FF4E00 !important;
-}
-section#block-menu-menu-links   .block-inner {
-    border-right: 1px dotted;
-    padding-right: 2px;
-    width: 118px;
-}
-#block-menu-menu-links    {
-    padding-left: 10px;
-    padding-top: 34px;
-}*/
 /* bibliography */
 .node-type-bibliography #page-title:before{
     content: "Bibliography";
