@@ -23,7 +23,7 @@ border-bottom: 1px dotted #636f7a;
     border-top: medium none;
 }   
 h1, h2, h3, h4, h5, h6 {
-  letter-spacing: -0.05em;
+  /*letter-spacing: -0.05em;*/
   font-family: Georgia, 'Times New Roman', serif;
 }
 
@@ -166,4 +166,7 @@ dd {
 }
 .node-type-links#ckeditor-custom-id li {
     margin-bottom: 10px;
+}
+.node p {
+    line-height:17px;
 }

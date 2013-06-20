@@ -946,6 +946,7 @@ section#block-views-people-block-1 .block-inner {
     /*background-position: 0 -32px;*/
     border-color: inherit;
 }
+
 .view-people.view-display-id-block_1 h3:first-child a {
   border: medium none;
 
@@ -1021,6 +1022,14 @@ text-decoration: underline;
 color: #FF4E00;
 display: block;
     
+}
+.node-people h5 {
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+
+.node-people .field-name-body {
+  margin-top: 27px !important;
 }
 /*  publications */
 .node-type-publications #page-title:before {

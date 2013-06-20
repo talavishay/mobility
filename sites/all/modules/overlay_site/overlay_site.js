@@ -55,6 +55,6 @@ jQuery('body:not(.ie) #zone-branding').css('position','relative').append('<div i
  jQuery('body.node-type-recommend #overlay').css("background","url(/sites/all/modules/overlay_site/recommend.SCREEN-SHOT.png)");
  jQuery('body.recommend #overlay').css("background","url(/sites/all/modules/overlay_site/recommend.png)");
  jQuery('body.node-type-birthday #overlay').css("background","url(/sites/all/modules/overlay_site/pageinbrithedays-block-menu-menu-select.png)");
- jQuery('body.node-type-blog #overlay').css("background","url(/sites/all/modules/overlay_site/blog-screenshot.jpg)");
+ jQuery('body.page-node-58 #overlay').css("background","url(/sites/all/modules/overlay_site/people-text.png)");
 
 });

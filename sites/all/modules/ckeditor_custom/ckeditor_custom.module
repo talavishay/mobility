@@ -24,8 +24,12 @@ function ckeditor_custom_wysiwyg_editor_settings_alter(&$settings, $context) {
 
     // We are also going to specify a custom body id and class
     $settings['bodyId'] = 'ckeditor-custom-id';
-    $settings['bodyClass'] = "node-type-".$node->type;
-
+    if(gettype($node) !== "undefined"){
+        $settings['bodyClass'] = "node";
+        if(gettype($node->type) !== "undefined"){
+            $settings['bodyClass'] .= " node-".$node->type;
+        }
+    }
     // Make sure the toolbar is there
     if (!empty($settings['toolbar'])) {
 
