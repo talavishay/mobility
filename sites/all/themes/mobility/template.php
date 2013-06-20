@@ -48,3 +48,9 @@ function mobility_breadcrumb($breadcrumb) {
      return '<div class="breadcrumb">'. implode(' <span class="breadcrumb_sep">></span> ', $breadcrumb["breadcrumb"]) .'</div>';
    }
 }
+//function mobility_simplenews_newsletter_body($body) {
+  // alter the following how you wish:
+//  $output = '<h2>'. $title ."</h2>\n";
+//$output = $body["body"];
+//return $output;
+//}

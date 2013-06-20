@@ -157,7 +157,8 @@ top: 90px;
 }
 
 .not-front .site-name-slogan {
-   background:url(/sites/all/themes/mobility/images/site-name-slogan-background.png) repeat scroll 0 0 transparent;
+background-image:url('/sites/all/themes/mobility/images/site-name-slogan-background.png');
+background-repeat: repeat;
 bottom: 5px;
 left: 0;
 position: absolute;
