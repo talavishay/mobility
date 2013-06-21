@@ -54,3 +54,23 @@ function mobility_breadcrumb($breadcrumb) {
 //$output = $body["body"];
 //return $output;
 //}
+function mobility_preprocess_node(&$variables) {
+    if($variables["view_mode"] === "token"){
+        $node_title_stripped = strip_tags(html_entity_decode($variables["title"]));
+//        $node_title_stripped = $variables["title"];
+        $links['node-readmore'] = array(
+                'title' => t('Read more<span class="element-invisible"> about @title</span>', array('@title' => $node_title_stripped)),
+                'href' => 'node/' . $variables["nid"],
+                'html' => TRUE,
+                    'attributes' => array('rel' => 'tag', 'title' => $node_title_stripped),
+                  //
+              );
+        $variables['content']['links']['node'] = array(
+            '#theme' => 'links__node__node',
+            '#links' => $links,
+            '#attributes' => array('class' => array('links', 'inline')),
+        );
+    }
+}
+
+  

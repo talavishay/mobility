@@ -189,7 +189,7 @@ tr.odd:hover td.active {
 td ul.links {
   margin-bottom: 0;
 }
-
+/*
 .links.node-links ul li a,
 .comment-links ul li a {
   text-transform: lowercase;
@@ -219,7 +219,7 @@ td ul.links {
   text-shadow: #fff 0 1px 1px;
   width: auto;
 
-  /* IE7 */
+   IE7 
   *padding-top: 2px;
   *padding-bottom: 0px;
 }
@@ -227,10 +227,34 @@ td ul.links {
 .node-links ul li a:hover,
 .comment-links ul li a:hover {
   background: #FFF;
-}
+}*/
 
 .tips,
 .description {
   font-size: 10px;
   color: #6a6a6a;
+}
+.node-readmore a {
+  background: url("/sites/all/themes/mobility/images/arrow.png") no-repeat scroll right 5px transparent;
+  border: medium none;
+  float: right ;
+  font-weight: normal;
+  padding-right: 13px;
+  padding-top: 0;
+  text-shadow: none;
+  color: black;
+  
+margin: 0;
+padding: 0 16px 0 0;
+text-decoration: none;
+text-transform: lowercase;
+line-height: 14px;
+}
+.node-readmore a:active,
+.node-readmore a:hover  {
+  color: red;
+  background-position:right -5px ;
+}
+li.node-readmore{
+    background: none;
 }

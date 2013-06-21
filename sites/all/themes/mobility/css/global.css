@@ -596,25 +596,7 @@ padding: 3px 0;
     padding: 0;
 }  
 
-#block-views-news-block .node-readmore a {
-  background: url("/sites/all/themes/mobility/images/arrow.png") no-repeat scroll right 6px transparent;
-  border: medium none;
-  float: right;
-  font-weight: normal;
-  padding-right: 13px;
-  padding-top: 0;
-  text-shadow: none;
-}
-#block-views-news-block .node-readmore a:active,
-#block-views-news-block .node-readmore a:hover  {
-  color: red;
-  background-position:right -4px ;
-}
-#block-views-news-block .node-readmore > a {
- float: none;
-margin: 0;
-padding: 0 16px 0 0;
-}
+
 img.file-icon {
   display: none;
 }
