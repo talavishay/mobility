@@ -1010,6 +1010,10 @@ display: block;
   font-size: 13px;
   margin-bottom: 3px;
 }
+.node-people h4{
+  font-size: 16px;
+  margin-bottom: 3px;
+}
 
 .node-people .field-name-body {
   margin-top: 27px !important;
