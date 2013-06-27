@@ -183,7 +183,7 @@ tr.odd td.active {
 tr:hover td,
 tr.even:hover td.active,
 tr.odd:hover td.active {
-  background: #FFFEEE;
+  /*background: #FFFEEE;*/
 }
 
 td ul.links {

@@ -70,7 +70,9 @@ function mobility_preprocess_node(&$variables) {
             '#links' => $links,
             '#attributes' => array('class' => array('links', 'inline')),
         );
+        
     }
+    $variables['date'] = t('@date', array('@date' => date("d.m.y", $variables['created'])));
 }
 
   

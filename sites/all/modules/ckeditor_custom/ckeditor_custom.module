@@ -26,8 +26,10 @@ function ckeditor_custom_wysiwyg_editor_settings_alter(&$settings, $context) {
     $settings['bodyId'] = 'ckeditor-custom-id';
     if(gettype($node) !== "undefined"){
         $settings['bodyClass'] = "node";
-        if(gettype($node->type) !== "undefined"){
-            $settings['bodyClass'] .= " node-".$node->type;
+        if(gettype($node) === "object"){
+            if(gettype($node->type) !== "undefined"){
+                $settings['bodyClass'] .= " node-".$node->type;
+            }
         }
     }
     // Make sure the toolbar is there
