@@ -10,11 +10,11 @@
  * Implements hook_wysiwyg_editor_settings_alter()
  */
 function ckeditor_custom_wysiwyg_editor_settings_alter(&$settings, $context) {
-
+$arg = arg();
   // The $context variable contains information about the wysiwyg profile we're using
   // In this case we just need to check that the editor being used is ckeditor
   if ($context['profile']->editor == 'ckeditor') {
-      $arg = arg();
+      
       if($arg[0]=== "node"  ){
           $node = node_load($arg[1]);
       }
@@ -24,7 +24,7 @@ function ckeditor_custom_wysiwyg_editor_settings_alter(&$settings, $context) {
 
     // We are also going to specify a custom body id and class
     $settings['bodyId'] = 'ckeditor-custom-id';
-    if(gettype($node) !== "undefined"){
+    if($arg[0] === "node"){
         $settings['bodyClass'] = "node";
         if(gettype($node) === "object"){
             if(gettype($node->type) !== "undefined"){

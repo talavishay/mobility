@@ -35,10 +35,10 @@
   font-weight: bold;
 }
 
-.pager li.pager-first a,
-.pager li.pager-previous a,
-.pager li.pager-next a,
-.pager li.pager-last a {
+.front .pager li.pager-first a,
+.front .pager li.pager-previous a,
+.front .pager li.pager-next a,
+.front .pager li.pager-last a {
   width: 50px;
   text-align:center;
   padding: 4px 0;

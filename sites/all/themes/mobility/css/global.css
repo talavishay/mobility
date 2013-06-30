@@ -66,6 +66,17 @@ min-height: 480px;
 padding: 0 23px 10px;
 width: 914px;
 }
+.page-media-browser,
+#media-browser-page #zone-content,
+#media-browser-page #region-content{
+       min-width: 0 !important;
+    width: auto !important;
+    
+}
+#media-browser-page .button {
+  margin-right: 15px;
+  font-weight: bold;
+}
 #zone-content #block-views-homepage-banner-block {
     border-bottom: 1px dotted #020E1B;
     margin: 0 auto;
@@ -214,6 +225,13 @@ background-size: contain;
 }
 .page-node-35 .branding-data {
    background-image:url("/sites/all/themes/mobility/images/header-background-mailinglist.jpg");
+}
+.node-type-project .branding-data,
+.page-project .branding-data, .context-projects .branding-data{
+   background-image:url("/sites/all/themes/mobility/images/header-background-pro.jpg");
+}
+.page-node-34 .branding-data {
+  background-image:url("/sites/all/themes/mobility/images/header-background-hebrew.jpg");   
 }
 #region-branding .links {
   border-left: 1px dotted rgba(0, 0, 0, 0.3);
@@ -1195,3 +1213,7 @@ font-weight: normal;
 }
 
 
+.media-list-thumbnails .form-type-checkbox {
+  display: block;
+  position:static;
+}
