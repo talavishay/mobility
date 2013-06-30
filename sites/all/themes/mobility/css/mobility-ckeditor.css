@@ -1,0 +1,16 @@
+
+p {
+  line-height:17px;
+}
+
+.node-people h5 {
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+.node-people h5:first-child {
+    margin-top: 0px;
+}
+.node-people {
+/*    border-right: 1px dotted;
+    width: 575px;*/
+}
