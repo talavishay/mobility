@@ -116,6 +116,10 @@ width: 430px;
 .page-node-34 #region-content {
     direction: rtl;
 }
+.page-node-34 li {
+  background-position: right 8px !important;
+  padding-right: 10px;
+}
 #block-block-2 {
     /*display: inline-block;*/
 margin-top: 3px !important;
