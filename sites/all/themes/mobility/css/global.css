@@ -238,7 +238,6 @@ background-size: contain;
   background-image:url("/sites/all/themes/mobility/images/header-background-hebrew.jpg");   
 }
 #region-branding .links {
-  border-left: 1px dotted rgba(0, 0, 0, 0.3);
 direction: rtl;
 height: 100%;
 padding: 0 5px;
@@ -252,12 +251,13 @@ width: 33px;
 
 }
 .links > a#university {
-background: url("/sites/all/themes/mobility/images/hujilogo.gif") no-repeat scroll 0 0 transparent;
+background: url("/sites/all/themes/mobility/images/hujilogo.png") no-repeat scroll 0 0 transparent;
+background-size:contain;
 height: 35px;
 margin-bottom: 9px;
 margin-top: 5px;
 text-indent: 9999px;
-width: 218px;
+width: 240px;
 }
 .links > a#erc {
   background: url("/sites/all/themes/mobility/images/erc.png") no-repeat scroll 0 0 transparent;
