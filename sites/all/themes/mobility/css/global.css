@@ -252,12 +252,12 @@ width: 33px;
 
 }
 .links > a#university {
-  background: url("/sites/all/themes/mobility/images/university.png") no-repeat scroll 0 0 transparent;
-height: 30px;
-margin-bottom: 17px;
-margin-top: 2px;
-width: 27px;
-  text-indent: 9999px;
+background: url("/sites/all/themes/mobility/images/hujilogo.gif") no-repeat scroll 0 0 transparent;
+height: 35px;
+margin-bottom: 9px;
+margin-top: 5px;
+text-indent: 9999px;
+width: 218px;
 }
 .links > a#erc {
   background: url("/sites/all/themes/mobility/images/erc.png") no-repeat scroll 0 0 transparent;
