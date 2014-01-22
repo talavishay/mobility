@@ -870,6 +870,9 @@ font-weight: bold;
 }
 
 /* PEPOLE */
+.node-people td {
+  vertical-align: top;
+}
 .node-type-people .node-people:not(.node-teaser) .field{
     font-size: 12px;
 }

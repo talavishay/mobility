@@ -7,7 +7,7 @@ a:link, a:visited {
   text-decoration: underline;
 }
 
-a:hover {
+a {
   color: #202124;
   text-decoration: none;
 }

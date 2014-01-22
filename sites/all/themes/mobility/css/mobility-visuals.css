@@ -258,3 +258,6 @@ line-height: 14px;
 li.node-readmore{
     background: none;
 }
+.media-widget .button {
+  margin: 0 5px;
+}
